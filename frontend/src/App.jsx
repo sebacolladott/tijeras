@@ -177,7 +177,7 @@ import {
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
-const API_URL = "/api";
+const API_URL = "http://localhost:4000/api";
 
 // ------ LOGIN PAGE ------
 const loginSchema = z.object({
