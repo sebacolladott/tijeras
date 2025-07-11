@@ -177,7 +177,7 @@ import {
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
-const API_URL = "http://localhost:4000/api";
+const API_URL = "/api";
 
 // ------ LOGIN PAGE ------
 const loginSchema = z.object({
@@ -343,7 +343,7 @@ function DashboardLayout() {
                     className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
                   >
                     <Avatar className="h-8 w-8 rounded-lg">
-                      <AvatarImage src="logo.jpg" alt="tijeras-logo" />
+                      <AvatarImage src="logo.png" alt="tijeras-logo" />
                       <AvatarFallback>TS</AvatarFallback>
                     </Avatar>
                     <div className="grid flex-1 text-left text-sm leading-tight">
