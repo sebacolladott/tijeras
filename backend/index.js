@@ -315,7 +315,7 @@ async function createInitialAdmin() {
 }
 
 // Iniciar servidor
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 80;
 sequelize
   .sync()
   .then(async () => {
