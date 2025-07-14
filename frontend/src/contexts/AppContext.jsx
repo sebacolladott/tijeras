@@ -62,6 +62,13 @@ export function AppProvider({ children }) {
         }
     }, [clearSession]);
 
+    // Verificar expiración de token en inicialización y cambios
+    useEffect(() => {
+        if (token && isTokenExpired(token)) {
+            handleSessionExpired();
+        }
+    }, [token, handleSessionExpired]);
+
     // --- Axios: token attach/interceptors ---
     useEffect(() => {
         const req = api.interceptors.request.use(
